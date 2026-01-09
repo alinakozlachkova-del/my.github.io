@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио | Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="projects.html">Проекты</a></li>
+                <li><a href="journey.html">Путь</a></li>
+                <li><a href="skills.html">Навыки</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">
+                Тёмная тема
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Контакты</h1>
+        
+        <div class="contact-intro">
+            <p>Если у вас есть вопросы, предложения или вы хотите обсудить сотрудничество — напишите мне!</p>
+        </div>
+
+        <div class="contact-section card">
+            <h2>Форма обратной связи</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="request-type">Тип запроса</label>
+                    <select id="request-type" name="request-type" required>
+                        <option value="" disabled selected>Выберите тип запроса</option>
+                        <option value="internship">Стажировка</option>
+                        <option value="collaboration">Сотрудничество</option>
+                        <option value="question">Вопрос</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </div>
+
+        <div class="contact-section card">
+            <h2>Прямые контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:1132237488@rudn.ru">1132237488@rudn.ru</a>
+                </div>
+                <div class="contact-item">
+                    <strong>ВКонтакте:</strong>
+                    <a href="https://vk.com/akozla4kova" target="_blank">vk.com/akozla4kova</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section card">
+            <h2>Давайте работать вместе</h2>
+            <div class="collaboration">
+                <div class="collab-item">
+                    <h3>Стажировка</h3>
+                    <p>Открыта для предложений о стажировке в области digital humanities, EdTech или веб-разработки.</p>
+                </div>
+                <div class="collab-item">
+                    <h3>Сотрудничество в проектах</h3>
+                    <p>Интересуюсь совместными проектами на стыке филологии, образования и технологий.</p>
+                </div>
+                <div class="collab-item">
+                    <h3>Нетворкинг</h3>
+                    <p>Всегда рада новым знакомствам в сфере цифровой филологии и EdTech.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <div class="copyright">
+                &copy; 2026 Козлачкова Алина. Все права защищены.
+            </div>
+            <div>
+                <a href="index.html">Главная</a>
+                <a href="projects.html">Проекты</a>
+                <a href="journey.html">Путь</a>
+                <a href="skills.html">Навыки</a>
+                <a href="about.html">Обо мне</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+            <div>
+                <a href="https://vk.com/akozla4kova">ВК</a>
+                <a href="mailto:1132237488@rudn.ru">Email</a>
+            </div>
+            <div>
+                <button id="back-to-top" class="theme-btn">⬆ Наверх</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
