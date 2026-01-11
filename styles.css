@@ -1,25 +1,19 @@
-/* ========== БАЗОВЫЕ СТИЛИ ========== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial;
+    line-height: 1.5;
     color: #2c3e50;
     background-color: #dfeaf4;
-     margin: 0;
-    padding: 0;}
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column; }
 
 /* ========== ШАПКА И НАВИГАЦИЯ ========== */
+
 .header {
     background-color: #2c3e50;
     padding: 1rem 0;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
 }
 
 
@@ -30,7 +24,6 @@ body {
 }
 
 .nav-links {
-    gap: 10px;
     padding: 0;
     margin: 0 0 10px 0;
 }
@@ -51,18 +44,20 @@ body {
     color: #f6f8ff;
     padding: 1.5rem 0;
     margin-top: 2rem;
+    margin-bottom: 0;
     width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 0; }
+    flex-shrink: 0;
+}
+
 
 .footer a {
     color: #f6f8ff;
+    text-decoration: none;
 }
 
 .footer a:hover {
     color: #2f81b7;
 }
-
 
 
 .copyright {
@@ -74,6 +69,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    flex: 1; 
 }
 
 
@@ -84,20 +80,18 @@ body {
     color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     margin-top: 10px;
-    align-self: flex-start;
+    text-decoration: none;
 }
 /* ========== КАРТОЧКИ И ТЕКСТ ========== */
 .card {
-    border: 1px solid #e0e6ed;
     border-radius: 8px;
     padding: 1.5rem;
     background-color: #f6f8ff;
     margin-bottom: 1.5rem;
 }
 
-/* Настройки отступов и интервалов в тексте карточек */
+
 .card h2,
 .card h3 {
     margin-top: 0;
@@ -125,7 +119,7 @@ body {
 /* ========== ТЕГИ ========== */
 .tag {
     background-color: #3498db21;
-    color: #3498db;
+    color: #246691;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -138,7 +132,7 @@ body {
     width: 250px;
     height: 280px;
     object-fit: cover;
-    border: 5px solid #2f81b7;
+    border: 5px solid #2c3e50;
     border-radius: 8px;
     margin: 15px auto;
 }
@@ -223,9 +217,9 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.6rem;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 4px;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-size: 1rem;
 }
 
@@ -236,7 +230,6 @@ body {
     padding: 0.7rem 1.3rem;
     border-radius: 4px;
     font-size: 1rem;
-    cursor: pointer;
 }
 
 
@@ -255,10 +248,7 @@ body.dark-theme {
 
 body.dark-theme h1,
 body.dark-theme h2,
-body.dark-theme h3,
-body.dark-theme h4,
-body.dark-theme h5,
-body.dark-theme h6 {
+body.dark-theme h3{
     color: #f6f8ff;
 }
 
@@ -273,7 +263,6 @@ body.dark-theme a {
 
 body.dark-theme .card {
     background-color: #21262d;
-    border-color: #30363d;
 }
 
 body.dark-theme .card h2,
@@ -293,7 +282,6 @@ body.dark-theme .tag {
 body.dark-theme .skill-item {
     background: #21262d;
     color: #79c0ff;
-    border-color: #30363d;
 }
 
 body.dark-theme .project-image {
@@ -313,17 +301,11 @@ body.dark-theme .form-group input,
 body.dark-theme .form-group select,
 body.dark-theme .form-group textarea {
     background: #333;
-    border-color: #555;
     color: #f6f8ff;
 }
 
 body.dark-theme .timeline-date {
     color: #58a6ff;
-}
-
-body.dark-theme .nav-links a {
-    text-decoration: none;
-    list-style: none;
 }
 
 body.dark-theme .nav-links {
